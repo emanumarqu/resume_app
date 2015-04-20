@@ -102,11 +102,11 @@
 				F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */,
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 				F4702A171A7F351C00E30A3C /* MenuController.swift */,
+				F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */,
 				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
-				F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */,
 			);
 			path = SidebarMenu;
 			sourceTree = "<group>";

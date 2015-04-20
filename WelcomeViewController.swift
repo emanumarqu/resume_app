@@ -10,6 +10,7 @@ import Foundation
 
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    @IBOutlet weak var avatar: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,13 @@ class WelcomeViewController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        self.roundingUIView(self.avatar, cornerRadiusParam: 10)
+    }
+    
+    private func roundingUIView(let aView: UIView!, let cornerRadiusParam: CGFloat!) {
+        aView.clipsToBounds = true
+        aView.layer.cornerRadius = cornerRadiusParam
     }
     
     

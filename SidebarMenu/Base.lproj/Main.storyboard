@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -293,14 +294,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhK-3p-ohE">
-                                <rect key="frame" x="69" y="147" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EPl-uT-TWG">
+                                <rect key="frame" x="0.0" y="64" width="600" height="289"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Fcr-h9-9Ir">
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fcr-h9-9Ir" secondAttribute="height" multiplier="1:1" id="gqI-o4-JPi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EPl-uT-TWG" firstAttribute="top" secondItem="ZEU-GZ-nkK" secondAttribute="bottom" id="EHN-Nt-Jwk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fcr-h9-9Ir" secondAttribute="trailing" constant="194" id="F76-PQ-Ozh"/>
+                            <constraint firstAttribute="centerX" secondItem="Fcr-h9-9Ir" secondAttribute="centerX" id="FGz-z8-JHJ"/>
+                            <constraint firstItem="EPl-uT-TWG" firstAttribute="leading" secondItem="235-DV-0gf" secondAttribute="leadingMargin" constant="-16" id="Rkr-kT-n8V"/>
+                            <constraint firstItem="Fcr-h9-9Ir" firstAttribute="leading" secondItem="235-DV-0gf" secondAttribute="leadingMargin" constant="194" id="UDi-Dd-qnj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EPl-uT-TWG" secondAttribute="trailing" constant="-16" id="YRP-Mo-MWE"/>
+                            <constraint firstAttribute="centerY" secondItem="Fcr-h9-9Ir" secondAttribute="centerY" id="wst-ZW-KrX"/>
+                            <constraint firstItem="EPl-uT-TWG" firstAttribute="bottom" secondItem="Fcr-h9-9Ir" secondAttribute="bottom" constant="-37" id="ymT-q2-XQP"/>
+                            <constraint firstItem="EPl-uT-TWG" firstAttribute="centerX" secondItem="Fcr-h9-9Ir" secondAttribute="centerX" id="yqY-Nd-xqi"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Welcome" id="JZR-FA-gRv">
@@ -308,6 +323,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="avatar" destination="Fcr-h9-9Ir" id="6cp-sb-5HY"/>
                         <outlet property="menuButton" destination="qE9-7Q-XSF" id="vzX-rl-5xz"/>
                     </connections>
                 </viewController>
@@ -424,6 +440,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="avatar" width="559" height="576"/>
+        <image name="background" width="796" height="1072"/>
         <image name="calendar" width="1024" height="1024"/>
         <image name="japanvillage" width="1800" height="1350"/>
         <image name="map" width="1024" height="1024"/>
