@@ -80,10 +80,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g9Q-QW-DeP" id="mav-NV-Wjh">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APPCODA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-8I-3Bb">
-                                                    <rect key="frame" x="19" y="23" width="119" height="21"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="26"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-8I-3Bb">
+                                                    <rect key="frame" x="25" y="4" width="119" height="36"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Menu">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="24" name="Futura-Medium"/>
+                                                                <font key="NSOriginalFont" size="24" name="Futura-Medium"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -99,10 +107,18 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="re8-IQ-jHL">
                                                     <rect key="frame" x="18" y="7" width="35" height="33"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-gS-Wl7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-gS-Wl7">
                                                     <rect key="frame" x="61" y="8" width="88" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="About Me">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="18" name="Futura-Medium"/>
+                                                                <font key="NSOriginalFont" size="22" name="Futura-Medium"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -120,10 +136,17 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="9KR-aa-RgE">
                                                     <rect key="frame" x="18" y="4" width="35" height="33"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-Bb-kny">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-Bb-kny">
                                                     <rect key="frame" x="61" y="6" width="44" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Map">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="18" name="Futura-Medium"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -141,10 +164,17 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
                                                     <rect key="frame" x="18" y="4" width="35" height="33"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
-                                                    <rect key="frame" x="61" y="6" width="55" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
+                                                    <rect key="frame" x="61" y="6" width="97" height="31"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="My Journey">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="18" name="Futura-Medium"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -190,7 +220,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Fcr-h9-9Ir">
-                                <rect key="frame" x="210" y="356" width="180" height="180"/>
+                                <rect key="frame" x="255" y="400" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fcr-h9-9Ir" secondAttribute="height" multiplier="1:1" id="SJu-p2-YQ7"/>
                                 </constraints>
@@ -211,10 +241,20 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iya-7x-oBh">
-                                <rect key="frame" x="260" y="285" width="80" height="30"/>
-                                <state key="normal" title="My Website">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iya-7x-oBh">
+                                <rect key="frame" x="255" y="255" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a11-AY-D5b"/>
+                                </constraints>
+                                <color key="tintColor" red="0.27338186194883052" green="0.63993634354860707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="My Website">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="35F-ms-3ND" kind="show" id="Ff1-90-JQo"/>
@@ -226,13 +266,14 @@
                             <constraint firstAttribute="centerX" secondItem="OPS-4u-lFF" secondAttribute="centerX" id="6lb-wd-aRy"/>
                             <constraint firstItem="EPl-uT-TWG" firstAttribute="top" secondItem="ZEU-GZ-nkK" secondAttribute="bottom" id="D0e-7a-OKJ"/>
                             <constraint firstItem="Fcr-h9-9Ir" firstAttribute="centerX" secondItem="EPl-uT-TWG" secondAttribute="centerX" id="IFb-hR-jfZ"/>
-                            <constraint firstItem="Iya-7x-oBh" firstAttribute="top" secondItem="OPS-4u-lFF" secondAttribute="bottom" constant="38" id="UK4-pH-ibn"/>
-                            <constraint firstItem="Fcr-h9-9Ir" firstAttribute="top" secondItem="ZEU-GZ-nkK" secondAttribute="bottom" constant="292" id="cZy-cI-wV8"/>
-                            <constraint firstItem="eHe-ET-eXJ" firstAttribute="top" secondItem="Fcr-h9-9Ir" secondAttribute="bottom" constant="20" id="ide-ps-XmX"/>
+                            <constraint firstItem="Iya-7x-oBh" firstAttribute="centerX" secondItem="OPS-4u-lFF" secondAttribute="centerX" id="Tf2-OY-ti3"/>
+                            <constraint firstItem="Fcr-h9-9Ir" firstAttribute="top" secondItem="ZEU-GZ-nkK" secondAttribute="bottom" constant="336" id="cZy-cI-wV8"/>
+                            <constraint firstItem="Iya-7x-oBh" firstAttribute="top" secondItem="OPS-4u-lFF" secondAttribute="bottom" constant="8" symbolic="YES" id="hnb-G4-E7X"/>
+                            <constraint firstItem="eHe-ET-eXJ" firstAttribute="top" secondItem="Fcr-h9-9Ir" secondAttribute="bottom" constant="66" id="ide-ps-XmX"/>
                             <constraint firstAttribute="trailing" secondItem="EPl-uT-TWG" secondAttribute="trailing" id="ogo-zB-KKw"/>
                             <constraint firstItem="OPS-4u-lFF" firstAttribute="top" secondItem="ZEU-GZ-nkK" secondAttribute="bottom" constant="98" id="ohA-vo-SqF"/>
-                            <constraint firstAttribute="centerX" secondItem="Iya-7x-oBh" secondAttribute="centerX" id="sPh-wU-WRh"/>
                             <constraint firstItem="EPl-uT-TWG" firstAttribute="leading" secondItem="235-DV-0gf" secondAttribute="leading" id="uzN-09-yxD"/>
+                            <constraint firstItem="Iya-7x-oBh" firstAttribute="leading" secondItem="Fcr-h9-9Ir" secondAttribute="leading" id="ynj-pe-UFq"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -253,7 +294,6 @@
         <!--Web View Controller-->
         <scene sceneID="gJR-32-ggb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MKu-Fq-Gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="35F-ms-3ND" customClass="WebViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8E2-1h-lzf"/>
@@ -280,6 +320,7 @@
                         <outlet property="webView" destination="kp2-mm-XfD" id="Qvg-ir-FIR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKu-Fq-Gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3260" y="-666"/>
         </scene>
@@ -383,6 +424,6 @@
         <image name="photo" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uKB-Ju-FBn"/>
+        <segue reference="h3F-gk-ZOy"/>
     </inferredMetricsTieBreakers>
 </document>
