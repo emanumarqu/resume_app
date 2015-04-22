@@ -33,5 +33,9 @@ class WelcomeViewController: UIViewController {
         aView.layer.cornerRadius = cornerRadiusParam
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 }

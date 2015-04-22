@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="233" y="51"/>
         </scene>
-        <!--Map-->
+        <!--About Me-->
         <scene sceneID="MMi-W1-KaJ">
             <objects>
-                <viewController id="IXz-HG-hIe" customClass="MapViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IXz-HG-hIe" customClass="AboutMeViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1V6-Hn-ruu"/>
                         <viewControllerLayoutGuide type="bottom" id="GLp-rp-ryS"/>
@@ -40,23 +40,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nsc-35-MTe">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utm-Ji-vfb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </mapView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Mxy-2u-as9"/>
+                                    <constraint firstAttribute="height" constant="600" id="mjS-Uj-Jg6"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nsc-35-MTe" firstAttribute="leading" secondItem="HE4-02-mb0" secondAttribute="leading" id="YdN-LU-Bp1"/>
-                            <constraint firstItem="nsc-35-MTe" firstAttribute="top" secondItem="HE4-02-mb0" secondAttribute="top" id="b27-P5-1ug"/>
-                            <constraint firstItem="nsc-35-MTe" firstAttribute="bottom" secondItem="GLp-rp-ryS" secondAttribute="top" id="qxz-OC-NpC"/>
-                            <constraint firstAttribute="trailing" secondItem="nsc-35-MTe" secondAttribute="trailing" id="uTY-dt-oMO"/>
+                            <constraint firstItem="Utm-Ji-vfb" firstAttribute="bottom" secondItem="GLp-rp-ryS" secondAttribute="top" id="aRc-jQ-3lt"/>
+                            <constraint firstItem="Utm-Ji-vfb" firstAttribute="leading" secondItem="HE4-02-mb0" secondAttribute="leading" id="ehx-AZ-Xc4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="YdA-HD-78b">
+                    <navigationItem key="navigationItem" title="About Me" id="YdA-HD-78b">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="rhH-Mc-GbH"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="QVi-fG-i4C"/>
+                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="irs-Q9-9z8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-bi-rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
