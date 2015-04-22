@@ -10,7 +10,9 @@ import Foundation
 
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    
     @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var background: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,8 @@ class WelcomeViewController: UIViewController {
         }
         
         self.roundingUIView(self.avatar, cornerRadiusParam: 10)
+//        self.roundingUIView(self.background, cornerRadiusParam: 10)
+        
     }
     
     private func roundingUIView(let aView: UIView!, let cornerRadiusParam: CGFloat!) {

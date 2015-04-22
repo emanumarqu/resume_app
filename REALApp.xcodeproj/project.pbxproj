@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2E37A951AE5A1D3009B1D5E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */; };
+		F2E37A991AE6E7E9009B1D5E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
+		F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +105,9 @@
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 				F4702A171A7F351C00E30A3C /* MenuController.swift */,
 				F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */,
-				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
+				F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */,
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
+				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
 			);
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F491E75A1A7F7EF20026528E /* SWRevealViewController.m in Sources */,
+				F2E37A991AE6E7E9009B1D5E /* WebViewController.swift in Sources */,
 				F2E37A951AE5A1D3009B1D5E /* WelcomeViewController.swift in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
