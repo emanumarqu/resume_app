@@ -92,7 +92,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yHA-q9-Z2Z" id="cZx-wU-7Pz">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="re8-IQ-jHL">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home-blue" translatesAutoresizingMaskIntoConstraints="NO" id="re8-IQ-jHL">
                                                     <rect key="frame" x="18" y="7" width="35" height="33"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-gS-Wl7">
@@ -121,7 +121,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcS-Um-JRf" id="tfV-qz-vFM">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="9KR-aa-RgE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="9KR-aa-RgE">
                                                     <rect key="frame" x="18" y="4" width="35" height="33"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-Bb-kny">
@@ -149,7 +149,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyu-8k-lj0" id="T53-k8-WHP">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maps" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
                                                     <rect key="frame" x="18" y="4" width="35" height="33"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
@@ -204,7 +204,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJH-Zr-5OB">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL4-F4-eCo" userLabel="Content View">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AL4-F4-eCo" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PwO-TF-fyW">
@@ -436,11 +436,11 @@
     <resources>
         <image name="avatar" width="559" height="576"/>
         <image name="background" width="796" height="1072"/>
-        <image name="calendar" width="1024" height="1024"/>
+        <image name="home-blue" width="224" height="224"/>
         <image name="japanvillage" width="1800" height="1350"/>
-        <image name="map" width="1024" height="1024"/>
+        <image name="maps" width="225" height="225"/>
+        <image name="me" width="492" height="492"/>
         <image name="menu" width="22" height="22"/>
-        <image name="photo" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h3F-gk-ZOy"/>
