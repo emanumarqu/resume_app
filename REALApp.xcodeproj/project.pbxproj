@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2E2DD2E1AE809E4006DC751 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2DD2D1AE809E4006DC751 /* AboutMeViewController.swift */; };
 		F2E37A951AE5A1D3009B1D5E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */; };
 		F2E37A991AE6E7E9009B1D5E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */; };
+		F2E527A91AEB946B00597146 /* ResumeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E527A81AEB946B00597146 /* ResumeWebView.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -35,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F2E2DD2D1AE809E4006DC751 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 		F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F2E527A81AEB946B00597146 /* ResumeWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeWebView.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 				F2E37A941AE5A1D3009B1D5E /* WelcomeViewController.swift */,
 				F2E37A981AE6E7E9009B1D5E /* WebViewController.swift */,
-				F2E2DD2D1AE809E4006DC751 /* AboutMeViewController.swift */,
+				F2E527A81AEB946B00597146 /* ResumeWebView.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
 				F4702A171A7F351C00E30A3C /* MenuController.swift */,
@@ -263,7 +263,7 @@
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
-				F2E2DD2E1AE809E4006DC751 /* AboutMeViewController.swift in Sources */,
+				F2E527A91AEB946B00597146 /* ResumeWebView.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,

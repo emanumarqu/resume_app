@@ -1,15 +1,17 @@
 //
-//  AboutMeViewController.swift
+//  ResumeWebView.swift
 //  REALApp
 //
-//  Created by Emanuel on 4/22/15.
+//  Created by Emanuel on 4/25/15.
 //  Copyright (c) 2015 AppCoda. All rights reserved.
 //
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
+class ResumeWebView: UIViewController {
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var resumeWebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +21,10 @@ class AboutMeViewController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+        let url = NSURL(string: "http://emanuelmarquez.com/#two")
+        let urlRequest = NSURLRequest(URL: url!)
+        self.resumeWebView.loadRequest(urlRequest)
     }
     
     

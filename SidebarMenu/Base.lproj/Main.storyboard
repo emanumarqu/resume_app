@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="233" y="51"/>
         </scene>
-        <!--About Me-->
+        <!--Resume-->
         <scene sceneID="MMi-W1-KaJ">
             <objects>
-                <viewController id="IXz-HG-hIe" customClass="AboutMeViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IXz-HG-hIe" customClass="ResumeWebView" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1V6-Hn-ruu"/>
                         <viewControllerLayoutGuide type="bottom" id="GLp-rp-ryS"/>
@@ -38,13 +38,26 @@
                     <view key="view" contentMode="scaleToFill" id="HE4-02-mb0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akL-NN-WAE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GLp-rp-ryS" firstAttribute="top" secondItem="akL-NN-WAE" secondAttribute="bottom" id="0gg-eb-yUr"/>
+                            <constraint firstItem="akL-NN-WAE" firstAttribute="top" secondItem="HE4-02-mb0" secondAttribute="topMargin" id="flR-9u-zL2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="akL-NN-WAE" secondAttribute="trailing" constant="-16" id="twS-pL-w28"/>
+                            <constraint firstItem="akL-NN-WAE" firstAttribute="leading" secondItem="HE4-02-mb0" secondAttribute="leadingMargin" constant="-16" id="zys-8O-UbT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About Me" id="YdA-HD-78b">
+                    <navigationItem key="navigationItem" title="Resume" id="YdA-HD-78b">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="rhH-Mc-GbH"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="irs-Q9-9z8"/>
+                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="X8w-un-MrH"/>
+                        <outlet property="resumeWebView" destination="akL-NN-WAE" id="bdA-AO-rOP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-bi-rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,11 +111,10 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-gS-Wl7">
                                                     <rect key="frame" x="61" y="8" width="93" height="31"/>
                                                     <attributedString key="attributedText">
-                                                        <fragment content="Welcome">
+                                                        <fragment content="About Me">
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="18" name="Futura-Medium"/>
-                                                                <font key="NSOriginalFont" size="18" name="Futura-Medium"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
@@ -127,7 +139,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-Bb-kny">
                                                     <rect key="frame" x="61" y="6" width="89" height="31"/>
                                                     <attributedString key="attributedText">
-                                                        <fragment content="About Me">
+                                                        <fragment content="Resume">
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="18" name="Futura-Medium"/>
@@ -344,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKu-Fq-Gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4089" y="-666"/>
+            <point key="canvasLocation" x="3991" y="-666"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O4a-aL-NR9">
@@ -358,6 +370,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="IXz-HG-hIe" kind="relationship" relationship="rootViewController" id="emK-gG-wXw"/>
+                        <segue destination="IXz-HG-hIe" kind="show" id="VUv-4O-E1i"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zi-DC-yja" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,6 +459,7 @@
         <image name="menu" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="emK-gG-wXw"/>
         <segue reference="h3F-gk-ZOy"/>
     </inferredMetricsTieBreakers>
 </document>

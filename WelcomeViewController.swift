@@ -23,8 +23,7 @@ class WelcomeViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-//        self.roundingUIView(self.avatar, cornerRadiusParam: 10)
-//        self.roundingUIView(self.background, cornerRadiusParam: 10)
+//       self.roundingUIView(self.avatar, cornerRadiusParam: 10)
         
     }
     
@@ -33,9 +32,5 @@ class WelcomeViewController: UIViewController {
         aView.layer.cornerRadius = cornerRadiusParam
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 }
