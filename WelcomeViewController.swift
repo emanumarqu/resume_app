@@ -23,7 +23,7 @@ class WelcomeViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        self.roundingUIView(self.avatar, cornerRadiusParam: 10)
+//        self.roundingUIView(self.avatar, cornerRadiusParam: 10)
 //        self.roundingUIView(self.background, cornerRadiusParam: 10)
         
     }
