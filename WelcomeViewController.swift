@@ -10,9 +10,8 @@ import Foundation
 
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
-    
     @IBOutlet weak var avatar: UIImageView!
-    @IBOutlet weak var background: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +22,20 @@ class WelcomeViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-//       self.roundingUIView(self.avatar, cornerRadiusParam: 10)
+        self.roundImage()
         
     }
     
-    private func roundingUIView(let aView: UIView!, let cornerRadiusParam: CGFloat!) {
-        aView.clipsToBounds = true
-        aView.layer.cornerRadius = cornerRadiusParam
+    private func roundImage() {
+//        For circlular image
+//        self.myUIImageView.layer.cornerRadius = self.myUIImageView.frame.size.width / 2
+        
+        self.avatar.layer.cornerRadius = 20.0
+        self.avatar.clipsToBounds = true
+        
+        // Adding a border to the image profile
+//        self.avatar.layer.borderWidth = 2.5
+//        self.avatar.layer.borderColor = UIColor.whiteColor().CGColor
     }
-    
     
 }
